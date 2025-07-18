@@ -1,0 +1,30 @@
+MongoDB – Setup Instructions and Notes
+
+1. Installation (Ubuntu):
+   sudo apt update
+   sudo apt install -y mongodb
+
+2. Start and Enable Service:
+   sudo systemctl start mongod
+   sudo systemctl enable mongod
+
+3. Access Mongo Shell:
+   mongo
+
+4. Database Basics:
+   - use dbname
+   - db.createCollection("collection")
+   - db.collection.insert({})
+
+5. Common Queries:
+   - db.collection.find()
+   - db.collection.find({ key: value })
+   - db.collection.updateOne()
+   - db.collection.deleteOne()
+
+6. Admin Notes:
+   - sudo systemctl status mongod
+   - sudo systemctl restart mongod
+   - Logs: /var/log/mongodb/mongod.log
+
+7. BSON format allows flexible schema
