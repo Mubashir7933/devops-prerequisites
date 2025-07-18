@@ -1,0 +1,29 @@
+MySQL – Setup Instructions and Notes
+
+1. Installation (Ubuntu):
+   sudo apt update
+   sudo apt install mysql-server
+
+2. Secure Installation:
+   sudo mysql_secure_installation
+
+3. Log in to MySQL shell:
+   sudo mysql
+
+4. To allow password-based login (if needed):
+   ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'yourpassword';
+
+5. Basic Commands:
+   SHOW DATABASES;
+   USE db_name;
+   SHOW TABLES;
+   DESCRIBE table_name;
+
+6. Backup Command:
+   mysqldump -u root -p devops_db > backup.sql
+
+7. Restore Command:
+   mysql -u root -p devops_db < backup.sql
+
+8. User Management:
+   CREATE USER, GRANT, REVOKE, DROP USER
