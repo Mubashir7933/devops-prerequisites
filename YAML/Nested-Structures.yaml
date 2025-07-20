@@ -1,0 +1,5 @@
+devops:
+  tools:
+    ci: GitHub Actions
+    container: Docker
+    orchestration: Kubernetes
