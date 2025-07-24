@@ -36,4 +36,5 @@ git rebase is ideal for cleaning up local commit history before pushing.
 It keeps the timeline linear and avoids merge noise.
 
 Best used in solo branches before opening a pull request.
+<img width="753" height="255" alt="image" src="https://github.com/user-attachments/assets/af48a056-485d-42ec-abd9-8d5b45baefb3" />
 
